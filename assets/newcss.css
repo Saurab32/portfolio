@@ -392,12 +392,26 @@ img {
 /*===================== About ==================*/
 .about__img {
   width: 100%;
-  max-width: 250px; /* Increase this value for a larger image */
+  max-width: 300px; /* Increased from 250px to 300px for a larger image */
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   justify-self: center;
   align-self: center;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about__img {
+    max-width: 250px; /* Slightly smaller on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .about__img {
+    max-width: 200px; /* Even smaller on mobile devices */
+  }
 }
 
 

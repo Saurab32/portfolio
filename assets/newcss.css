@@ -292,6 +292,10 @@ img {
   width: 180%;
   height: 145%;
   padding-left: 30px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  object-position: center; /* Centers the image within the container */
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
 }
 
 .home__data {

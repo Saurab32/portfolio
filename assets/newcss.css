@@ -289,10 +289,14 @@ img {
   /* fill: hsl(69, 69%, 61%); */
 }
 .home__blob-img {
-  width: 180%;
-  height: 145%;
-  padding-left: 30px;
+  width: 100%;
+  max-width: 300px; /* Adjust based on your preference */
+  height: auto;
+  object-fit: cover; /* Ensures it covers the area without distortion */
+  border-radius: 50%; /* Optional: if you want a circular effect */
+  padding-left: 0; /* Remove the extra left padding */
 }
+
 .home__data {
   grid-column: 1/3;
 }

@@ -392,25 +392,26 @@ img {
 /*===================== About ==================*/
 .about__img {
   width: 100%;
-  max-width: 300px; /* Increased from 250px to 300px for a larger image */
+  max-width: 300px; /* Adjust this value for the desired size */
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  justify-self: center;
-  align-self: center;
-  margin: 0 auto; /* Centers the image horizontally */
+  display: block; /* Ensures the image is treated as a block element */
+  margin: -20px auto 0 auto; /* Adjust the negative margin to move it up */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .about__img {
     max-width: 250px; /* Slightly smaller on tablets */
+    margin: -15px auto 0 auto; /* Adjust for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .about__img {
     max-width: 200px; /* Even smaller on mobile devices */
+    margin: -10px auto 0 auto; /* Adjust for mobile screens */
   }
 }
 
